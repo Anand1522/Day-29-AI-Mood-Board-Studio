@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Mood Board Studio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Animated Background -->
+    <div class="bg-gradient"></div>
+
+    <!-- Header -->
+    <header>
+        <h1>🎨 AI Mood Board Studio</h1>
+        <p>Create beautiful AI-inspired visual mood boards from a single idea.</p>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <!-- Left Panel -->
+        <section class="control-panel">
+
+            <div class="card">
+
+                <h2>Create Mood Board</h2>
+
+                <label>Describe Your Idea</label>
+
+                <textarea
+                    id="promptInput"
+                    placeholder="Example: Futuristic Tokyo at night with neon lights and cyberpunk atmosphere..."
+                ></textarea>
+
+                <label>Mood</label>
+
+                <select id="moodSelect">
+                    <option>Creative</option>
+                    <option>Minimal</option>
+                    <option>Luxury</option>
+                    <option>Cyberpunk</option>
+                    <option>Nature</option>
+                    <option>Dreamy</option>
+                    <option>Vintage</option>
+                    <option>Dark</option>
+                    <option>Bright</option>
+                    <option>Fantasy</option>
+                </select>
+
+                <label>Color Theme</label>
+
+                <select id="colorSelect">
+                    <option>Auto</option>
+                    <option>Blue</option>
+                    <option>Purple</option>
+                    <option>Orange</option>
+                    <option>Green</option>
+                    <option>Pink</option>
+                    <option>Black</option>
+                    <option>Gold</option>
+                    <option>Pastel</option>
+                    <option>Rainbow</option>
+                </select>
+
+                <label>Style</label>
+
+                <select id="styleSelect">
+                    <option>Modern</option>
+                    <option>Glassmorphism</option>
+                    <option>Minimal</option>
+                    <option>Abstract</option>
+                    <option>3D</option>
+                    <option>Anime</option>
+                    <option>Illustration</option>
+                    <option>Digital Art</option>
+                    <option>Photography</option>
+                </select>
+
+                <button id="generateBtn">
+                    ✨ Generate AI Mood Board
+                </button>
+
+                <button id="randomBtn" class="secondary">
+                    🎲 Random Inspiration
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Right Panel -->
+        <section class="board-panel">
+
+            <!-- AI Summary -->
+            <div class="summary-card">
+
+                <h2>AI Creative Summary</h2>
+
+                <div id="summary">
+
+                    Enter your creative idea and generate your personalized mood board.
+
+                </div>
+
+            </div>
+
+            <!-- Color Palette -->
+            <div class="palette-card">
+
+                <div class="title-row">
+                    <h2>Suggested Color Palette</h2>
+                </div>
+
+                <div class="palette" id="palette">
+
+                    <div class="color-box"></div>
+                    <div class="color-box"></div>
+                    <div class="color-box"></div>
+                    <div class="color-box"></div>
+                    <div class="color-box"></div>
+
+                </div>
+
+            </div>
+
+            <!-- Mood Keywords -->
+            <div class="keywords-card">
+
+                <h2>AI Keywords</h2>
+
+                <div class="tags" id="keywords">
+
+                    <span class="tag">Creative</span>
+                    <span class="tag">Design</span>
+                    <span class="tag">Innovation</span>
+
+                </div>
+
+            </div>
+
+            <!-- Image Grid -->
+            <div class="gallery-card">
+
+                <div class="gallery-title">
+                    <h2>AI Mood Board</h2>
+                </div>
+
+                <div class="gallery" id="gallery">
+
+                    <div class="image-card">
+                        <img src="https://picsum.photos/500?random=11">
+                    </div>
+
+                    <div class="image-card">
+                        <img src="https://picsum.photos/500?random=12">
+                    </div>
+
+                    <div class="image-card">
+                        <img src="https://picsum.photos/500?random=13">
+                    </div>
+
+                    <div class="image-card">
+                        <img src="https://picsum.photos/500?random=14">
+                    </div>
+
+                    <div class="image-card">
+                        <img src="https://picsum.photos/500?random=15">
+                    </div>
+
+                    <div class="image-card">
+                        <img src="https://picsum.photos/500?random=16">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            🚀 Day 29 • 30 Days 30 AI Websites Challenge •
+            AI Mood Board Studio
+        </p>
+
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
